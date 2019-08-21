@@ -1,0 +1,109 @@
+body {
+  background-image: url("../img/bg.png");
+  background-size: auto;
+  background-repeat: no-repeat;
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  color: white;
+}
+
+input, button {
+  font-family: 'Nunito', sans-serif;
+  margin: 0px 0px 10px 0px;
+  font-weight: 700;
+}
+
+.main-div, .loggedin-div {
+  width: 400px;
+  height: 400px;
+	
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+  	
+	margin: auto;
+}
+
+.main-div input {
+  border: 1px solid #ccc;
+  background: #fff;
+  padding: 15px;
+  outline: none;
+  width: 100%;
+  margin-bottom: 20px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+}
+
+.main-div input:focus :hover {
+   border: 1px solid #777;
+}
+
+.main-div input:hover {
+  border: 1px solid #777;
+}
+
+.main-div button, .loggedin-div button {
+  background: #5d8ffc;
+  color: #fff;
+  border: 1px solid #5d8ffc;
+  padding: 15px;
+  display: block;
+  width: 100%;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+}
+
+.main-div button:hover, .loggedin-div button:hover {
+  background: #90b3ff;
+  border: 1px solid #90b3ff;
+  cursor: pointer;
+}
+
+.login-title {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.panel {
+  padding: 40px 40px 30px 40px;
+  color: black;
+  background-color: white;
+}
+
+.error-red {
+  text-align: center;
+  color: red;
+  font-size: 14px;
+  padding: 2px;
+}
+
+.error-green {
+  text-align: center;
+  color: green;
+  font-size: 14px;
+  padding: 2px;
+}
+
+.text-btn {
+  text-align: center;
+  color: black;
+  font-size: 14px;
+}
+
+.text-btn:hover {
+ text-decoration: underline;
+ cursor: pointer;
+}
+
+.text {
+ text-align: center;
+ color: black;
+ font-size: 14px;
+}

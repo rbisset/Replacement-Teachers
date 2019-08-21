@@ -1,0 +1,41 @@
+
+<html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+      <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+      <link rel="stylesheet" href="css/main.css" />
+    </head>
+    <body>
+    
+      <!-- LOGIN SCREEN -->
+      <div id="login_div" class="main-div">
+        <div class="panel">
+          <h3 class="login-title">New Account</h3>
+          <input type="username" placeholder="Username..." id="username_field" />
+          <input type="email" placeholder="Email..." id="email_field" />
+          <input type="password" placeholder="Password..." id="password_field" />
+          <button id="login" class="button-spacing" onclick="CreateAccount()">Create Account</button>
+          <p id="error" class="error"></p>
+          <p class="text">Already have an account <span class="text-btn" onclick="Login()">Login!</span</p>      
+        </div>
+      </div> 
+    
+      <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+      <script>
+        // Initialize Firebase
+        var config = {
+          apiKey: "AIzaSyAQy4PP0VsYDy--v-BgwFayxTBxcJCPilE",
+          authDomain: "server-monitor-001.firebaseapp.com",
+          databaseURL: "https://server-monitor-001.firebaseio.com",
+          projectId: "server-monitor-001",
+          storageBucket: "",
+          messagingSenderId: "466631119013",
+          appId: "1:466631119013:web:7f158e8291a33475"
+        };
+        firebase.initializeApp(config);
+      </script>
+      <script src="js/signup.js"></script>
+    </body>
+    </html>
+    
