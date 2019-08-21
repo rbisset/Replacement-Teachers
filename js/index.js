@@ -25,7 +25,7 @@ function LoginClick() {
 
 // Log user into firebase
 function login() {
-  firebase.auth().setPersistence(firebase.auth.Auth.Persistence.SESSION)
+  firebase.auth().setPersistence(firebase.auth.Auth.Persistence.LOCAL)
   .then(function() {
     // New sign-in will be persisted with session persistence.    
     return firebase.auth().signInWithEmailAndPassword(emailField.value, passwordField.value);
