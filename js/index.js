@@ -19,7 +19,7 @@ passwordField.addEventListener("keyup", function(event) {
 
 function LoginClick() {
   errorText.className = "error-green";
-  errorText.innerHTML = "Signing into account...";
+  errorText.innerHTML = "Signing into account...";  
   document.getElementById("login").click();
 }
 

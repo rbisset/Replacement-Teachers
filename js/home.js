@@ -12,6 +12,7 @@ function SignOut() {
     }
   });
 
-  function LoadUI() {    
+  function LoadUI() {       
     document.getElementById("login_div").style = "display: block;";
+    document.getElementById("email").innerHTML = firebase.auth().currentUser.email;
   }
