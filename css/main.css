@@ -40,11 +40,11 @@ input, button {
   -moz-transition: 0.3s;
 }
 
-.main-div input:focus :hover {
+.main-div input:hover {
    border: 1px solid #777;
 }
 
-.main-div input:hover {
+.main-div input:focus {
   border: 1px solid #777;
 }
 
