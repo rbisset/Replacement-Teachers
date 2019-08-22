@@ -1,0 +1,176 @@
+body {
+  background-image: url("../img/bg.png");
+  background-position: center;
+
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  color: white;
+}
+
+input, button {
+  font-family: 'Nunito', sans-serif;
+  margin: 0px 0px 10px 0px;
+  font-weight: 700;
+}
+
+.main-div, .loggedin-div {
+  width: 400px;
+  height: 400px;
+	
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+  	
+	margin: auto;
+}
+
+.main-div input {
+  border: 1px solid #ccc;
+  background: #fff;
+  padding: 15px;
+  outline: none;
+  width: 100%;
+  margin-bottom: 20px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+}
+
+.main-div input:hover {
+   border: 1px solid #777;
+}
+
+.main-div input:focus {
+  border: 1px solid #777;
+}
+
+.main-div button, .loggedin-div button {
+  background: #5d8ffc;
+  color: #fff;
+  border: 1px solid #5d8ffc;
+  padding: 15px;
+  display: block;
+  width: 100%;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+}
+
+.main-div button:hover, .loggedin-div button:hover {
+  background: #90b3ff;
+  border: 1px solid #90b3ff;
+  cursor: pointer;
+}
+
+.login-title {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.panel {
+  padding: 40px 40px 30px 40px;
+  color: black;
+  background-color: white;
+}
+
+.error-red {
+  text-align: center;
+  color: red;
+  font-size: 14px;
+  padding: 2px;
+}
+
+.error-green {
+  text-align: center;
+  color: green;
+  font-size: 14px;
+  padding: 2px;
+}
+
+.text-btn {
+  text-align: center;
+  color: black;
+  font-size: 14px;
+}
+
+.text-btn:hover {
+ text-decoration: underline;
+ cursor: pointer;
+}
+
+.text {
+ text-align: center;
+ color: black;
+ font-size: 14px;
+}
+
+/* NAVIGATION BAR */
+.navbar {
+  overflow: hidden;
+  background-color: white;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px; 
+  font-weight: normal;
+  border: none;
+  outline: none;
+  color: black;
+  background-color: white;
+  padding: 14px 16px;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: lightgrey;
+}
+
+.navbar a:hover, .dropdown-right:hover .dropbtn {
+  background-color: lightgrey;
+}
+
+.dropdown-content {
+  right: 0;
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  cursor: pointer;
+}
+
+.dropdown-content a:hover {
+  background-color: lightgrey;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
