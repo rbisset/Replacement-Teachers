@@ -1,0 +1,36 @@
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+        <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+        <link rel="stylesheet" href="/css/main.css" />
+
+        <title>Accounts</title>
+    </head>
+    <body>
+        <div id="login_div" class="main-div">
+            <div class="panel">
+                <h3 class="login-title">Accounts Menu</h3>
+                <button class="button-spacing" onclick="">Change Password</button>
+                <button class="button-spacing" onclick="">Create New User</button>
+                <button class="button-spacing" onclick="ShowHome()">Go Back</button>
+            </div>
+        </div>
+    
+        <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+        <script>
+        var config = {
+            apiKey: "AIzaSyAQy4PP0VsYDy--v-BgwFayxTBxcJCPilE",
+            authDomain: "server-monitor-001.firebaseapp.com",
+            databaseURL: "https://server-monitor-001.firebaseio.com",
+            projectId: "server-monitor-001",
+            storageBucket: "",
+            messagingSenderId: "466631119013",
+            appId: "1:466631119013:web:7f158e8291a33475"
+        };
+        firebase.initializeApp(config);        
+        </script>
+        <script src="main.js"></script>      
+    </body>
+</html>
+        

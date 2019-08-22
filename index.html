@@ -2,27 +2,29 @@
 <html>
     <head>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-      <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
-      <link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">      
+      <link rel="stylesheet" href="css/main.css" />
+
+      <title>Home</title>
     </head>
-    <body>
-    
-      <!-- LOGIN SCREEN -->
-      <div id="login_div" class="main-div">
-        <div class="panel">
-          <h3 class="login-title">Login</h3>
-          <input type="email" placeholder="Email..." id="email_field" />
-          <input type="password" placeholder="Password..." id="password_field" />
-          <button id="login" class="button-spacing" onclick="login()">Login</button>
-          <p id="error" class="error-red"></p>
-          <p class="text">Don't have an account <span class="text-btn" onclick="Signup()">Create one!</span</p>     
+    <body onload="HideUI()" id="body">
+      <div id="ui-content" style="display: none;">      
+        <div class="navbar">
+          <a>Link</a>
+          <a>Link</a>
+          <div class="dropdown" style="float:right;">
+            <button class="dropbtn"><i style="font-size: 22px;" class="fa fa-user-circle"></i></button>
+            <div class="dropdown-content">
+              <a onclick="ShowAccounts()">Account</a>
+              <a onclick="ShowSettings()">Settings</a>
+              <a onclick="SignOut()">Log Out</a>
+            </div>
+          </div>
         </div>
       </div>
-    
       <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
       <script>
-        // Initialize Firebase
         var config = {
           apiKey: "AIzaSyAQy4PP0VsYDy--v-BgwFayxTBxcJCPilE",
           authDomain: "server-monitor-001.firebaseapp.com",
@@ -34,7 +36,7 @@
         };
         firebase.initializeApp(config);
       </script>
-      <script src="js/index.js"></script>
+      <script src="main.js"></script>
     </body>
     </html>
     

@@ -1,21 +1,23 @@
 
 <html>
     <head>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">    
       <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
-      <link rel="stylesheet" href="css/main.css" />
+      <link rel="stylesheet" href="../css/main.css">
+
+      <title>Login</title>
     </head>
-    <body onload="HideUI()">
+    <body>
     
       <!-- LOGIN SCREEN -->
-      <div id="login_div" class="main-div" style="display: none;">
-        <div>
-          <div class="panel">
-              <h3 class="login-title">Home Page</h3>
-              <p id="email" style="text-align: center;"></p>
-              <button class="button-spacing" onclick="SignOut()">Sign Out</button>
-          </div>
+      <div id="login_div" class="main-div">
+        <div class="panel">
+          <h3 class="login-title">Login</h3>
+          <input type="email" placeholder="Email..." id="email_field" />
+          <input type="password" placeholder="Password..." id="password_field" />
+          <button id="login" class="button-spacing" onclick="login()">Login</button>
+          <p id="error" class="error-red"></p>
+          <p class="text-btn" onclick="ShowResetPassword()">Forgotten your password?</p>     
         </div>
       </div>
     
@@ -33,7 +35,7 @@
         };
         firebase.initializeApp(config);
       </script>
-      <script src="js/home.js"></script>
+      <script src="main.js"></script>
     </body>
     </html>
     

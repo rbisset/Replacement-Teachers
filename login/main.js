@@ -19,7 +19,7 @@ passwordField.addEventListener("keyup", function(event) {
 
 function LoginClick() {
   errorText.className = "error-green";
-  errorText.innerHTML = "Signing into account...";  
+  errorText.innerHTML = "Signing into account...";
   document.getElementById("login").click();
 }
 
@@ -41,11 +41,11 @@ firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
     // User logged in successfully.
     errorText.className = "error-green";
-    errorText.innerHTML = "Signing into account...";    
-    document.location.href = "home.html";
+    errorText.innerHTML = "Signing into account...";
+    document.location.href = "../index.html";
   }
 });
 
-function Signup() {
-  window.location.href = "signup.html";
+function ShowResetPassword() {
+  window.location.href = "/reset-password/";
 }
