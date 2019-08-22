@@ -8,7 +8,7 @@ function SignOut() {
       LoadUI();
     }else {
       // No user is signed in.
-      window.location.href = "/login/";
+      window.location.href = "/pages/login/";
     }
   });
 
@@ -18,5 +18,5 @@ function SignOut() {
   }
 
   function ShowAccounts() {
-    window.location.href = "/accounts/";
+    window.location.href = "/pages/account/";
   }

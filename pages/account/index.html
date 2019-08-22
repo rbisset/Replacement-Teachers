@@ -1,0 +1,56 @@
+<html>
+
+<head>
+    <!-- Required Meta Tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Iconfont Stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link href="/assets/img/favicon.png" rel="icon" type="image/x-icon" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../../assets/css/global.css" />
+
+    <!-- Title -->
+    <title>Staff Track - Account</title>
+</head>
+
+<body>
+    <div id="login_div" class="main-div">
+        <div class="panel">
+            <h3 class="login-title">Accounts Menu</h3>
+            <button class="button-spacing" onclick="">Change Password</button>
+            <button class="button-spacing" onclick="">Create New User</button>
+            <button class="button-spacing" onclick="ShowHome()">Go Back</button>
+        </div>
+    </div>
+
+    <!-- Core Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+
+    <!-- Firebase Configuration -->
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyAToVmXe1cYnGkr5MPRS5QJ3RSn0mjif8c",
+            authDomain: "replacement-teachers.firebaseapp.com",
+            databaseURL: "https://replacement-teachers.firebaseio.com",
+            projectId: "replacement-teachers",
+            storageBucket: "",
+            messagingSenderId: "1022429043589",
+            appId: "1:1022429043589:web:9e75ea4749594fd5"
+        };
+
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <!-- Scripts -->
+    <script src="main.js"></script>
+</body>
+
+</html>
