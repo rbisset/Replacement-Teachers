@@ -20,5 +20,5 @@ function ResetPassword() {
 }
 
 function ShowLogin() {
-    window.location.href = "../index.html";
+    window.location.href = "/pages/login/";
 }
