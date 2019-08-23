@@ -1,7 +1,7 @@
 /* NAVIGATION BAR */
 .navbar {
     overflow: hidden;
-    background-color: white;
+    background-color: whitesmoke;
   }
   
   .navbar a {
@@ -24,7 +24,7 @@
     border: none;
     outline: none;
     color: black;
-    background-color: white;
+    background-color: whitesmoke;
     padding: 14px 16px;
     margin: 0;
   }
@@ -41,7 +41,7 @@
     right: 0;
     display: none;
     position: absolute;
-    background-color: white;
+    background-color: whitesmoke;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -64,3 +64,10 @@
   .dropdown:hover .dropdown-content {
     display: block;
   }
+
+/* BACKGROUND */
+
+.opaque {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}

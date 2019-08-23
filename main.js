@@ -14,7 +14,6 @@ function SignOut() {
 
   function LoadUI() {       
     document.getElementById("ui-content").style = "display: block;";
-    document.getElementById("body").style = "background-image: none; background-color: lightgrey;";
   }
 
   function ShowAccounts() {
